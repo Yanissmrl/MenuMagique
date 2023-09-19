@@ -1,3 +1,4 @@
+import './styles/App.css';
 
 import Layout from './components/layout/Layout.jsx';
 // import ErrorPage from './components/ErrorPage';
