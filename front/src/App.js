@@ -1,5 +1,7 @@
 import './styles/App.css';
 import Layout from './components/layout/Layout.jsx';
+import Login from './routes/Login';
+import Register from './routes/Register';
 // import ErrorPage from './components/ErrorPage';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 function App() {
@@ -8,12 +10,16 @@ function App() {
       path: '/',
       element: <Layout />,
       // errorElement: <ErrorPage />,
-      // children: [
-      //   {
-      //     path: '/login',
-      //     element: <Login />
-      //   },
-      // ],
+      children: [
+        {
+          path: '/login',
+          element: <Login />
+        },
+        {
+          path: '/register',
+          element: <Register />
+        },
+      ],
     },
   ]);
 
