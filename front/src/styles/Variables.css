@@ -14,7 +14,6 @@
     --faded-black: rgba(0, 0, 0, 0.4);
     --cloudy-black:rgba(0, 0, 0, 0.7);
 
-    --drop-shadow-number : drop-shadow(3px 9px 18px rgba(0, 0, 0, 0.25));
   }
 
 
@@ -51,4 +50,8 @@
 }
 .color-main-grey{
   color: var(--main-grey);
+}
+
+.drop-shadow-number{
+  filter: drop-shadow(3px 9px 18px rgba(0, 0, 0, 0.25));
 }
