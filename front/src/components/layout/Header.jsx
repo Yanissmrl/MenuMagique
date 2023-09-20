@@ -1,5 +1,7 @@
 import logo from "../../media/logo.png";
 import '../../styles/Header.css';
+import '../../styles/Variables.css';
+import '../../styles/Typo.css';
 import ClassicButton from "../button/classic-button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
@@ -15,10 +17,10 @@ export default function Header() {
                     <div>
                         <img src={logo} alt="logo" />
                     </div>
-                    <div className="nav-text ">
-                        <p className="underline"><FontAwesomeIcon icon={faMagnifyingGlass} className="icon" /> Chercher une recette</p>
-                        <p><FontAwesomeIcon icon={faCirclePlus} className="icon" /> Ajouter une recette</p>
-                        <p><FontAwesomeIcon icon={faUser} className="icon" /> Se connecter</p>
+                    <div className="nav-text">
+                        <p className="hover-header"><FontAwesomeIcon icon={faMagnifyingGlass} className="icon" /> Chercher une recette</p>
+                        <p className="hover-header"><FontAwesomeIcon icon={faCirclePlus} className="icon" /> Ajouter une recette</p>
+                        <p className="hover-header"><FontAwesomeIcon icon={faUser} className="icon" /> Se connecter</p>
                         <ClassicButton>Crée un compte</ClassicButton>
                     </div>
                 </div>

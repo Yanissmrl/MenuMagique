@@ -20,17 +20,15 @@ img {
     margin: 30px 100px 30px;
 }
 
+.hover-header:hover {
+    color: #FFB684;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
 
 .nav-text {
     font-family: "Poppins";
     display: flex;
     gap: 40px;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-p:hover {
-    color: #FFB684;
-    cursor: pointer;
-    transition-duration: 0.4s;
 }
