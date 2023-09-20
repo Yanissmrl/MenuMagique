@@ -3,32 +3,12 @@
     src: url('../font/Poppins-Regular.ttf') format('truetype');
 }
 
-img {
-    width: 89px;
-    height: 89px;
-    cursor: pointer;
-}
-
 .icon {
     margin-right: 9px;
 }
 
-.header-display {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px 100px 30px;
-}
-
-.hover-header:hover {
-    color: #FFB684;
+.nav-text:hover{
+    color: var(--main-orange);
     cursor: pointer;
     transition-duration: 0.4s;
-}
-
-
-.nav-text {
-    font-family: "Poppins";
-    display: flex;
-    gap: 40px;
 }

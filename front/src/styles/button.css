@@ -3,21 +3,27 @@
     src: url('../font/Poppins-Regular.ttf') format('truetype');
 }
 
-.classic {
-    background-color: #FFB684;
-    border-radius: 7px;
-    border: none;
-    color: white;
-    margin: 5px 0px 5px;
-    font-size: 2.5848142164781907vh;
-    padding: 0px 15px 0px;
-    font-family: "Poppins";
+.first-cta{
+    background-color: var(--main-orange);
+    border-radius: 6px;
+    border: 1px solid var(--main-orange);
+    color: var(--main-white);
+    padding: 12px 30px 12px;
+    transition: all 0.3s ease-in-out;
 }
 
-.classic:hover {
-    border: 1px solid #FFB684;
-    background-color: white;
-    color: #FFB684;
-    transition-duration: 1s;
+.first-cta:hover{
+    background-color: var(--main-white);
+    color: var(--main-orange);
     cursor: pointer;
 }
+
+.second-cta{
+    background-color: var(--main-blue);
+    border-radius: 6px;
+    border: 1px solid var(--main-blue);
+    color: var(--main-white);
+    margin: 5px 0px 5px;
+    padding: 0px 15px 0px;
+}
+

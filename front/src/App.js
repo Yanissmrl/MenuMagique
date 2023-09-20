@@ -6,6 +6,7 @@ import Register from './routes/Register';
 // import ErrorPage from './components/ErrorPage';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import FindRecipe from './routes/FindRecipe';
+import AddRecipe from './routes/AddRecipe';
 function App() {
   const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ function App() {
         {
           path: '/FindRecipe',
           element: <FindRecipe />
+        },
+        {
+          path: '/AddRecipe',
+          element: <AddRecipe />
         },
       ]
     }
