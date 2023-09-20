@@ -1,12 +1,25 @@
+import '../../styles/Home.css'
+import kitchen from "../../media/kitchen.png";
+
 function HomeSectionTop(){
     return (
-        <div>
+        <>
             <div>
-                <h1>
-                    Pas de repas prévu ? <br /> Pas de soucis !
-                </h1>
+                <p>Découvrez <span className='font'>MenuMagique</span></p>
             </div>
-        </div>
+            <div className='section-top'>
+                <div className='flex'>
+                    <div>
+                        <h1>
+                            Pas de repas prévu ? <br /> <span className="blue">Pas de soucis !</span>
+                        </h1>
+                    </div>
+                    <div>
+                        <img src={kitchen} alt='' />
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }
 
