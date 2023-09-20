@@ -20,12 +20,14 @@ function App() {
           path: '/register',
           element: <Register />
         },
+        {
           path: '/FindRecipe',
           element: <FindRecipe />
         },
-      ],
-    },
+      ]
+    }
   ]);
+
 
   return (
     <>
