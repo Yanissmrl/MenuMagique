@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../font/Poppins-Regular.ttf') format('truetype');
+}
+
+img {
+    width: 89px;
+    height: 89px;
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 9px;
+}
+
+.header-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 100px 30px;
+}
+
+
+.nav-text {
+    font-family: "Poppins";
+    display: flex;
+    gap: 40px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+p:hover {
+    color: #FFB684;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}

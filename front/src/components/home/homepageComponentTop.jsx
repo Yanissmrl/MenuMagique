@@ -1,7 +1,11 @@
 function HomeSectionTop(){
     return (
         <div>
-            <p>Section HOME 1</p>
+            <div>
+                <h1>
+                    Pas de repas prévu ? <br /> Pas de soucis !
+                </h1>
+            </div>
         </div>
     );
 }
