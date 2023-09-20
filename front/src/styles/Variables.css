@@ -1,4 +1,7 @@
 element {
+    --title-font: "Poppins", sans-serif;
+    --main-font: "Montserrat";
+
     --main-black: #111;
     --main-white: #FEFEFE;
     --main-blue: #3581B8;
@@ -12,3 +15,39 @@ element {
 
     --drop-shadow-number : drop-shadow(3px 9px 18px rgba(0, 0, 0, 0.25));
   }
+
+
+.bg-main-blue{
+  background-color: var(--main-blue);
+}
+.bg-light-blue{
+  background-color: var(--light-blue);
+}
+.bg-main-orange{
+  background-color: var(--main-orange);
+}
+.bg-main-grey{
+  background-color: var(--main-grey);
+}
+.bg-faded-grey{
+  background-color: var(--faded-grey);
+}
+.bg-faded-black{
+  background-color: var(--faded-black);
+}
+.bg-cloudy-black{
+  background-color: var(--cloudy-black);
+}
+
+.color-blue{
+  color: var(--main-blue);
+}
+.color-light-blue{
+  color: var(--light-blue);
+}
+.color-main-orange{
+  color: var(--main-orange);
+}
+.color-main-grey{
+  color: var(--main-grey);
+}

@@ -1,5 +1,7 @@
 import logo from "../../media/logo.png";
 import '../../styles/Header.css';
+import '../../styles/Variables.css';
+import '../../styles/Typo.css';
 import ClassicButton from "../button/classic-button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
