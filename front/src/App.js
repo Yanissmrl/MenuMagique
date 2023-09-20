@@ -1,3 +1,4 @@
+import './index.css';
 import './styles/App.css';
 import Layout from './components/layout/Layout.jsx';
 import Login from './routes/Login';
@@ -24,9 +25,10 @@ function App() {
           path: '/FindRecipe',
           element: <FindRecipe />
         },
-      ],
-    },
+      ]
+    }
   ]);
+
 
   return (
     <>
