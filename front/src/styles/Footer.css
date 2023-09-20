@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('../font/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../font/Poppins-Regular.ttf') format('truetype');
+}
+
+.footer {
+    margin: 30px 100px 30px;
+}
+
+.Footer-title {
+    font-family: "Montserrat";
+    color: #FFB684;
+}
+
+.text-footer {
+    font-family: "Poppins";
+    margin-right: 550px;
+}
+
+.instagram {
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: xx-large;
+}
