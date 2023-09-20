@@ -3,7 +3,7 @@ function HomeSectionTop(){
         <div>
             <div>
                 <h1>
-                    Pas de repas prévu ? Pas de soucis !
+                    Pas de repas prévu ? <br /> Pas de soucis !
                 </h1>
             </div>
         </div>
