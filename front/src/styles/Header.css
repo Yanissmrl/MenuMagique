@@ -7,13 +7,8 @@
     margin-right: 9px;
 }
 
-.nav-text {
-    display: flex;
-    gap: 40px
-}
-
-p:hover {
-    color: #FFB684;
+.nav-text:hover{
+    color: var(--main-orange);
     cursor: pointer;
     transition-duration: 0.4s;
 }

@@ -1,7 +1,5 @@
 import "../../styles/Footer.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-solid-svg-icons';
-
 export default function Footer() {
 
     return (
@@ -15,7 +13,7 @@ export default function Footer() {
                         <p>Visitez nos réseaux sociaux ou nous partageons tous les meilleurs bon plans. Vous pouvez également nous laisser une petite review ! </p>
                     </div>
                     <div>
-                        <FontAwesomeIcon icon={faInstagram} className="instagram" />
+                        <FontAwesomeIcon className="instagram" />
                     </div>
                 </div>
             </div>
