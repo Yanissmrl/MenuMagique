@@ -1,0 +1,14 @@
+element {
+    --main-black: #111;
+    --main-white: #FEFEFE;
+    --main-blue: #3581B8;
+    --light-blue: #F4F6FB;
+    --main-orange: #FFB684;
+    --main-grey: #DEE2D6;
+    --faded-grey: rgba(222, 226, 214, 0.10);
+
+    --faded-black: rgba(0, 0, 0, 0.4);
+    --cloudy-black:rgba(0, 0, 0, 0.7);
+
+    --drop-shadow-number : drop-shadow(3px 9px 18px rgba(0, 0, 0, 0.25));
+  }
