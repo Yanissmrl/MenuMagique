@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../font/Poppins-Regular.ttf') format('truetype');
+}
+
+.classic {
+    background-color: #FFB684;
+    border-radius: 1.1308562197092085vh;
+    border: none;
+    color: white;
+    margin: 0.8077544426494345vh 0px 0.8077544426494345vh;
+    font-size: 2.5848142164781907vh;
+    padding: 0px 2.4232633279483036vh 0px;
+    font-family: "Poppins";
+}
+
+.classic:hover {
+    border: 1px solid #FFB684;
+    background-color: white;
+    color: #FFB684;
+    transition-duration: 1s;
+    cursor: pointer;
+}
