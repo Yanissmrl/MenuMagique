@@ -4,28 +4,28 @@
 }
 
 img {
-    width: 14.539579967689821vh;
-    height: 14.539579967689821vh;
+    width: 89px;
+    height: 89px;
     cursor: pointer;
 }
 
 .icon {
-    margin-right: 1.615508885298869vh;
+    margin-right: 9px;
 }
 
 .header-display {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 4.846526655896607vh 16.15508885298869vh 4.846526655896607vh;
+    margin: 30px 100px 30px;
 }
 
 
 .nav-text {
     font-family: "Poppins";
     display: flex;
-    gap: 6.462035541195476vh;
-    font-size: 2.5vh;
+    gap: 40px;
+    font-size: 15px;
     font-weight: 500;
 }
 
