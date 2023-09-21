@@ -27,9 +27,13 @@ export default function Ingredients(props) {
 
             <div className="flex items-center justify-between">
                 <h2>Ingrédients</h2>
-                <div className="rounded-full bg-main-orange h-12 w-12 relative">
-                    <FontAwesomeIcon className="absolute centerPosition text-white h-8" onClick={() => props.setPop(!props.pop)} icon={faPlus} />
-                </div>
+                {
+                    localStorage.getItem('token') &&
+                    <div className="rounded-full bg-main-orange h-12 w-12 relative">
+                        <FontAwesomeIcon className="absolute centerPosition text-white h-8" onClick={() => props.setPop(!props.pop)} icon={faPlus} />
+                    </div>
+                }
+
             </div>
             <div>
                 {ingredients.map((ingredient, index) => {
