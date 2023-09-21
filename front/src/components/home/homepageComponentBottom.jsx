@@ -3,7 +3,7 @@ import RectangleSVGWithAscii from "../Icons/Rectangle";
 
 function HomeSectionBottom(){
     return (
-        <section className="flex justify-center mb-48">
+        <section className="flex justify-center mb-96">
             <div className="container grid md:grid-cols-2 md:grid-rows-1 gap-16 ">
                 <div>
                     <div className="flex items-center">

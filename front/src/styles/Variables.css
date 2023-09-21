@@ -51,7 +51,17 @@
 .color-main-grey{
   color: var(--main-grey);
 }
-
 .drop-shadow-number{
   filter: drop-shadow(3px 9px 18px rgba(0, 0, 0, 0.25));
+}
+
+.border-main-blue{
+  border-top: 1px solid var(--main-blue);
+  border-left: 1px solid var(--main-blue);
+  border-right: 1px solid var(--main-blue);
+}
+.border-main-orange{
+  border-top: 1px solid var(--main-orange);
+  border-left: 1px solid var(--main-orange);
+  border-right: 1px solid var(--main-orange);
 }

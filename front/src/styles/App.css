@@ -1,3 +1,12 @@
+@import url(./button.css);
+@import url(./Footer.css);
+@import url(./Header.css);
+@import url(./Home.css);
+@import url(./index.css);
+@import url(./input.css);
+@import url(./Typo.css);
+@import url(./Variables.css);
+
 body {
     margin: 0;
   }
