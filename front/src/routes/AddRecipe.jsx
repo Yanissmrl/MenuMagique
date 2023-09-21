@@ -1,11 +1,14 @@
+import AddRecipeFormTop from "../components/AddRecipe/AddRecipeFormTop"
+import AddRecipeFormMiddle from "../components/AddRecipe/AddRecipeFormMiddle"
+import AddRecipeFormBottom from "../components/AddRecipe/AddRecipeFormBottom"
+
 
 export default function AddRecipe() {
     return (
-
-
         <>
-            <h1>Créez votre recette </h1>
-            <h1 className="color-ain-orange">C’est vous le chef !  </h1>
+            <AddRecipeFormTop />
+            <AddRecipeFormMiddle />
+            <AddRecipeFormBottom />
         </>
 
     )
