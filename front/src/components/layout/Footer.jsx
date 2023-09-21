@@ -4,16 +4,9 @@ export default function Footer() {
 
     return (
         <>
-<<<<<<< HEAD
             <footer className="mt-96 mb-52 flex justify-center ">
                 <div className="container">
                     <div className="flex items-center justify-between">
-=======
-        <footer className="mt-56 mb-52 flex justify-center ">
-            <div className="container">
-                <div className="flex items-center">
-                    <div>
->>>>>>> 23ed36167052763bad5899a2198e841158b429e3
                         <div>
                             <div>
                                 <h1 className="color-main-orange">NOUS CONNAITRE</h1>
