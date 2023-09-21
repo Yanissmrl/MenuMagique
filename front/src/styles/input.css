@@ -1,0 +1,13 @@
+.input-blue{
+    border-bottom: 4px solid var(--main-blue);
+}
+
+.input-size{
+    width: 725px;
+}
+
+@media (max-width: 1064px){
+    .input-size{
+        width: 100%;
+    }
+}
