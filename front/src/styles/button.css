@@ -38,3 +38,15 @@
     color: var(--main-blue);
 }
 
+.submit-cta-orange{
+    background: var(--main-orange);
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-cta-orange:hover{
+    background: var(--main-white);
+    border: solid 1px var(--main-orange);
+    color: var(--main-orange);
+}
+
+

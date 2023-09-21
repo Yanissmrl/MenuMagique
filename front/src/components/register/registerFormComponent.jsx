@@ -5,7 +5,7 @@ function RegisterForm(){
         <div>
             <div className="flex justify-center w-full">
                 <div>
-                    <div className="mb-8 text-center">
+                    <div className="mb-16 text-center">
                             <h1>Pas de repas prévu ? </h1>
                         <h1 className="color-main-orange">Inscrivez vous ! </h1>
                     </div>
@@ -19,8 +19,8 @@ function RegisterForm(){
 
                         <input type="password" name="pwdrepeat" placeholder="Confirmation du mot de passe" className="w-full mb-5 py-4 px-6 rounded-md bg-light-blue border-main-blue input-blue input-size"/>
                     </form>
-                    <div className="flex justify-center mt-8">
-                        <SubmitButton name="signup-submit" description="Créer un compte" cssClass="submit-cta-blue py-2.5 px-14 rounded-md text-white"/>
+                    <div className="flex justify-center mt-10">
+                        <SubmitButton name="signup-submit" description="Créer un compte" cssClass="submit-cta-orange py-2.5 px-14 rounded-md text-white"/>
                     </div>
                 </div>
 
