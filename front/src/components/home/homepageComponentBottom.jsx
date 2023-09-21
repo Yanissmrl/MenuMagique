@@ -7,7 +7,7 @@ function HomeSectionBottom() {
             <div className="container grid md:grid-cols-2 md:grid-rows-1 gap-16 items-center">
                 <div>
                     <div className="flex items-center">
-                        <RectangleSVGWithAscii fillColor="var(--main-grey)" ascii="🥫" />
+                        <RectangleSVGWithAscii fillColor="var(--main-grey)" ascii="🥫"/>
                     </div>
                     <div className="flex items-center h-full">
                         <div>
@@ -23,12 +23,10 @@ function HomeSectionBottom() {
                     </div>
                 </div>
 
-                <div className="flex items-center">
+                <div className="flex items-center ">
                     <video autoPlay loop muted>
                         <source src="/soup.mp4" type="video/mp4" />
                     </video>
-
-                    {/* <video src="../media/soup.mp4" controls className="w-full"></video> */}
                 </div>
             </div>
         </section>
