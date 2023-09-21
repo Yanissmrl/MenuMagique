@@ -7,7 +7,7 @@ function HomeSectionBottom() {
             <div className="container grid md:grid-cols-2 md:grid-rows-1 gap-16 items-center">
                 <div>
                     <div className="flex items-center">
-                        <RectangleSVGWithAscii fillColor="var(--main-grey)" ascii="🥫" />
+                        <RectangleSVGWithAscii fillColor="var(--main-grey)" ascii="🥫"/>
                     </div>
                     <div className="flex items-center h-full">
                         <div>
