@@ -20,7 +20,7 @@ function RegisterForm(){
                         <input type="password" name="pwdrepeat" placeholder="Confirmation du mot de passe" className="w-full mb-5 py-4 px-6 rounded-md bg-light-blue border-main-blue input-blue input-size"/>
                     </form>
                     <div className="flex justify-center mt-10">
-                        <SubmitButton name="signup-submit" description="Créer un compte" cssClass="submit-cta-blue py-2.5 px-14 rounded-md text-white"/>
+                        <SubmitButton name="signup-submit" description="Créer un compte" cssClass="submit-cta-orange py-2.5 px-14 rounded-md text-white"/>
                     </div>
                 </div>
 
