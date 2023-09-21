@@ -2,6 +2,20 @@
     border-bottom: 4px solid var(--main-blue);
 }
 
+.input-blue::placeholder{
+    color: var(--main-blue);
+    font-weight: 600;
+}
+
+.input-orange{
+    border-bottom: 4px solid var(--main-orange);
+}
+
+.input-orange::placeholder{
+    color: var(--main-orange);
+    font-weight: 600;
+}
+
 .input-size{
     width: 725px;
 }
