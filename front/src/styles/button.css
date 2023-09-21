@@ -27,3 +27,14 @@
     padding: 0px 15px 0px;
 }
 
+.submit-cta-blue{
+    background: var(--main-blue);
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-cta-blue:hover{
+    background: var(--main-white);
+    border: solid 1px var(--main-blue);
+    color: var(--main-blue);
+}
+
