@@ -1,11 +1,20 @@
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
+import axios from "axios"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 
-export default function Ingredients() {
+export default function Ingredients(props) {
     // UseRef
-    const addIngredientRef = useRef(null)
 
     //UseState 
-    const [pop, setPop] = useState(false)
+    const [ingredients, setIngredients] = useState([])
+
+    useEffect(() => {
+        axios.get('http://localhost/MenuMagiqueBack/index.php?route=get_ingredient').then((response) => {
+            // console.log(response.data.results);
+            setIngredients(response.data.results)
+        });
+    }, [])
 
     const ingredientsArr = [
         'poulet',
@@ -28,34 +37,9 @@ export default function Ingredients() {
     ]
 
     // liste de plats
-    const dishesArr = [
-        'pattes bolognaise',
-        'pattes carbonara',
-        'pattes au pesto',
-        'pattes au saumon',
-        'pattes au thon',
-        'pattes au poulet',
-        'pattes au boeuf',
-        'pattes au canard',
-        'pattes au lapin',
-        'pattes au porc',
-        'pattes au veau',
-        'pattes au canard',
-        'pattes au lapin',
-        'pattes au porc',
-        'pattes au veau',
-        'pattes au canard',
-        'pattes au lapin',
-        'pattes au porc',
-        'pattes au veau',
-        'pattes aux pattes',
-    ]
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log(addIngredientRef.current.value)
-        setPop(false)
-    }
+
+
 
     const handleclick = (e) => {
         console.log(e.target.textContent)
@@ -63,48 +47,26 @@ export default function Ingredients() {
 
     return (
         <>
-            {
-                pop &&
-                <>
-                    <form onSubmit={handleSubmit} type='submit'>
-                        <input type="text" placeholder="Ex : Pomme ..." ref={addIngredientRef} />
-                        <button >Ajouter l'ingredient</button>
-                    </form>
-                </>
-            }
-            <div>
+
+            <div className="flex items-center justify-between">
                 <h2>Ingrédients</h2>
-                <div>
-                    <p onClick={() => setPop(!pop)}>{pop ? 'fermer' : 'ajouter'}</p>
+                <div className="rounded-full bg-main-orange h-12 w-12 relative">
+                    <FontAwesomeIcon className="absolute centerPosition text-white h-8" onClick={() => props.setPop(!props.pop)} icon={faPlus} />
                 </div>
             </div>
             <div>
-                {ingredientsArr.map((ingredient, index) => {
+                {ingredients.map((ingredient, index) => {
                     return (
                         <>
                             <div key={index}>
-                                <p onClick={handleclick}>{ingredient}</p>
+                                <p onClick={handleclick}>{ingredient.Name}</p>
                             </div>
                         </>
                     )
                 })}
 
             </div >
-            <div>
-                <h2>Recettes</h2>
-                {
-                    dishesArr.map((dish, index) => {
-                        return (
-                            <>
-                                <div key={index}>
-                                    <p onClick={handleclick}>{dish}</p>
-                                </div>
-                            </>
-                        )
-                    }
-                    )
-                }
-            </div>
+
         </>
     )
 }

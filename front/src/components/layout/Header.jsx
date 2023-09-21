@@ -12,7 +12,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
   const location = useLocation();
-
+  
   return (
     <header className="flex justify-center mb-28">
       <div className="header container">
@@ -40,4 +40,3 @@ function Header() {
 }
 
 export default Header;
-
