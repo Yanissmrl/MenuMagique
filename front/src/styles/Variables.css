@@ -65,3 +65,10 @@
   border-left: 1px solid var(--main-orange);
   border-right: 1px solid var(--main-orange);
 }
+.border-orange{
+  border: 1px solid var(--main-orange);
+}
+
+.border-blue{
+  border: 1px solid var(--main-blue);
+}
