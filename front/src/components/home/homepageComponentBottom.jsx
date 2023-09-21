@@ -23,12 +23,10 @@ function HomeSectionBottom() {
                     </div>
                 </div>
 
-                <div className="flex items-center">
+                <div className="flex items-center ">
                     <video autoPlay loop muted>
                         <source src="/soup.mp4" type="video/mp4" />
                     </video>
-
-                    {/* <video src="../media/soup.mp4" controls className="w-full"></video> */}
                 </div>
             </div>
         </section>
