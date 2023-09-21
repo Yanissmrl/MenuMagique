@@ -1,13 +1,17 @@
-.input-blue{
-    border-bottom: 4px solid var(--main-blue);
+.input-blue {
+  border-bottom: 4px solid var(--main-blue);
 }
 
-.input-size{
-    width: 725px;
+.input-size {
+  width: 725px;
 }
 
-@media (max-width: 1064px){
-    .input-size{
-        width: 100%;
-    }
+.inputPop {
+  width: 85% !important;
+}
+
+@media (max-width: 1064px) {
+  .input-size {
+    width: 100%;
+  }
 }
