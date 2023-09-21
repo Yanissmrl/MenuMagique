@@ -3,18 +3,37 @@ import Recipes from "../components/FindRecipe/Recipes";
 import { useState, useRef } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import axios from "axios";
+
 
 export default function FindRecipe() {
     const [pop, setPop] = useState(false)
 
     const addIngredientRef = useRef(null)
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log(addIngredientRef.current.value)
-        setPop(false)
-    }
+  
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const ingredientName = addIngredientRef.current.value;
+        // Créez un objet contenant les données à envoyer
+        const data = {
+            Name: ingredientName,
+        };
+
+        axios
+            .post("http://localhost/MenuMagiqueBack/index.php?route=create_ingredient", data)
+            .then((response) => {
+                console.log(response.data);
+                // Traitez la réponse ici, par exemple, mettez à jour l'état de votre application.
+            })
+            .catch((error) => {
+                console.error(error);
+                // Gérez les erreurs ici.
+            });
+
+        setPop(false);
+    };
     return (
 
 

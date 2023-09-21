@@ -11,34 +11,11 @@ export default function Ingredients(props) {
 
     useEffect(() => {
         axios.get('http://localhost/MenuMagiqueBack/index.php?route=get_ingredient').then((response) => {
-            // console.log(response.data.results);
+            console.log(response.data.results);
             setIngredients(response.data.results)
+            // console.log("ingredients", ingredients);
         });
-    }, [])
-
-    const ingredientsArr = [
-        'poulet',
-        'pomme de terre',
-        'carotte',
-        'poireau',
-        'chou',
-        'chou-fleur',
-        'chou rouge',
-        'chou vert',
-        'chou de Bruxelles',
-        'chou chinois',
-        'chou romanesco',
-        'chou-rave',
-        'fraise',
-        'framboise',
-        'mûre',
-        'myrtille',
-        'cassis',
-    ]
-
-    // liste de plats
-
-
+    }, [!props.pop])
 
 
     const handleclick = (e) => {

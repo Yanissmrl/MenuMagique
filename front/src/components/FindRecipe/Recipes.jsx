@@ -4,7 +4,7 @@ import axios from "axios";
 export default function Recipes() {
     const [dishesArr, setDishesArr] = useState([])
     useEffect(() => {
-        axios.get('http://localhost/MenuMagiqueBack/index.php?route=get_receipe').then((response) => {
+        axios.get('http://localhost/MenuMagiqueBack/index.php?route=get_recipes_with_ingredients').then((response) => {
             // console.log(response.data.results);
             setDishesArr(response.data.results)
         });
