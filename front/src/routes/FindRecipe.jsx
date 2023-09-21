@@ -44,7 +44,7 @@ export default function FindRecipe() {
                         pop &&
                         <>
                             <form className=" flex flex-col justify-around items-center border-main-orange border border-b-4 rounded-2xl absolute centerPosition bg-light-green w-2/5 h-3/5" onSubmit={handleSubmit} type='submit'>
-                                <FontAwesomeIcon onClick={() => setPop(!pop)} className="absolute h-8 right-4 top-4" icon={faXmark} />
+                                <FontAwesomeIcon onClick={() => setPop(!pop)} className="absolute h-8 right-4 top-4 cursor-pointer" icon={faXmark} />
                                 <h2 className="uppercase text-main-blue text-center">Ajout d’ingrédient</h2>
                                 <input className="inputPop mb-5 py-4 px-6 rounded-md bg-light-blue border-main-blue input-blue input-size" type="text" placeholder="Ex : Pomme ..." ref={addIngredientRef} />
                                 <button className="bg-main-orange py-2.5 px-14 rounded-md text-white" >Ajouter l'ingredient</button>
