@@ -4,7 +4,7 @@ export default function Footer() {
 
     return (
         <>
-            <footer className="mt-96 mb-52 flex justify-center ">
+            <footer className="mt-48 mb-52 flex justify-center ">
                 <div className="container">
                     <div className="flex items-center justify-between">
                         <div>
