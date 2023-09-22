@@ -6,7 +6,7 @@ export default function Footer() {
         <>
             <footer className="mt-48 mb-52 flex justify-center ">
                 <div className="container">
-                    <div className="flex items-center justify-between">
+                    <div className="grid md:grid-cols-2 md:grid-rows-1">
                         <div>
                             <div>
                                 <h1 className="color-main-orange">NOUS CONNAITRE</h1>
@@ -18,7 +18,7 @@ export default function Footer() {
 
                             </div>
                         </div>
-                        <div className="flex">
+                        <div className="flex items-center sm:justify-end justify-start mt-16">
                             <div className="drop-shadow-number mb-10 bg-main-grey h-auto w-auto rounded-full p-4">
                                 <svg className="h-5	w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 24" fill="none">
                                     <path d="M2.37831 4.58794V7.84995H0V11.8384H2.37831V23.6923H7.26012V11.8396H10.5371C10.5371 11.8396 10.8441 9.92729 10.9929 7.83571H7.28019V5.10787C7.28019 4.70071 7.81159 4.1523 8.33827 4.1523H11V0H7.38175C2.25668 0 2.37831 3.99205 2.37831 4.58794Z" fill="#FEFEFE" />
