@@ -42,6 +42,9 @@
 .color-main-blue{
   color: var(--main-blue);
 }
+.color-main-white{
+  color: var(--main-white);
+}
 .color-light-blue{
   color: var(--light-blue);
 }

@@ -6,6 +6,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 export default function Ingredients(props) {
     // UseState 
     const [ingredients, setIngredients] = useState([]);
+    const [selectedIngredients, setSelectedIngredients] = useState([]);
 
     useEffect(() => {
         axios.get('http://localhost/MenuMagiqueBack/index.php?route=get_ingredient').then((response) => {
@@ -16,6 +17,18 @@ export default function Ingredients(props) {
 
     const handleclick = (e) => {
         console.log(e.target.textContent);
+    }
+
+    const handleIngredientClick = (ingredient) => {
+        // Check if the ingredient is already selected
+        const isSelected = selectedIngredients.includes(ingredient.Name);
+
+        // Toggle selection
+        if (isSelected) {
+            setSelectedIngredients(selectedIngredients.filter(name => name !== ingredient.Name));
+        } else {
+            setSelectedIngredients([...selectedIngredients, ingredient.Name]);
+        }
     }
 
     return (
@@ -31,9 +44,9 @@ export default function Ingredients(props) {
             <div className="flex flex-wrap gap-3">
                 {ingredients.map((ingredient, index) => (
                     <div key={index} className={`mt-5 max-w-xs cursor-pointer flex-grow w-[calc(20% + ${ingredient.Name.length * 5}px)]`}>
-                        <div className="py-3 px-1 rounded-full border-orange color-main-orange">
+                        <div className={`py-3 px-1 rounded-full border-orange ease-in-out ${selectedIngredients.includes(ingredient.Name) ? 'color-main-white bg-main-orange' : 'color-main-orange'}`} onClick={() => handleIngredientClick(ingredient)}>
                             <div className="text-center px-4">
-                                <p onClick={handleclick}>{ingredient.Name}</p>
+                                <p>{ingredient.Name}</p>
                             </div>
                         </div>
                     </div>
