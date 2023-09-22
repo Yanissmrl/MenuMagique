@@ -10,8 +10,6 @@ function RegisterForm() {
     const emailRef = useRef(null);
     const passwordRepeatRef = useRef(null);
 
-
-
     const handleSubmit = (e) => {
         e.preventDefault();
         const pass = passwordRef.current.value;
@@ -55,7 +53,7 @@ function RegisterForm() {
                         <p id="hidden" className="text-center small-p mb-5">Le mot de passe doit contenir au minimum 16 caractères, majuscule et minuscule ainsi que 2 caractères spéciaux</p>
 
                         <input ref={passwordRepeatRef} type="password" name="pwdrepeat" placeholder="Confirmation du mot de passe" className="w-full mb-5 py-4 px-6 rounded-md bg-light-blue border-main-blue input-blue input-size" />
-                        
+
                         <div className="flex justify-center mt-10">
                             <SubmitButton name="signup-submit" description="Créer un compte" cssClass="submit-cta-orange py-2.5 px-14 rounded-md text-white" />
                         </div>
